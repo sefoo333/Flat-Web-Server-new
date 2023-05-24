@@ -1,0 +1,782 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  /* Created By Sefoo333  */
+  /* Created By Sefoo333  */
+  /* Created By Sefoo333  */
+
+
+
+  /* background change */
+
+
+  .onlybackground {
+      background-color: whitesmoke;
+      transition: 0.5s;
+  }
+
+  .button-5,
+  .click-1 {
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+      box-shadow: 0px 0px 3px 0px #000000a6;
+      background-color: var(--color-2);
+      border-radius: 50%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 222;
+      right: 0;
+      bottom: 0;
+      color: white;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      cursor: pointer;
+  }
+
+  .button-5 svg {
+      font-size: 25px;
+  }
+
+
+  /* end */
+
+  :root {
+      --color-1: #fdab1b;
+      --color-2: #646ad8;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      background-color: #302e2e;
+      transition: 0.5s;
+  }
+
+  /* Created By Sefoo333  */
+
+  /* background changed */
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  .m-m {
+      padding: 0 100px;
+  }
+
+  .msafa {
+      padding-top: 100px;
+      padding-bottom: 100px;
+  }
+
+  ::-webkit-scrollbar {
+      width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+      background-color: whitesmoke;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background-color: #646ad8;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background-color: #585dc7;
+  }
+
+
+  /* Created By Sefoo333  */
+
+  /* start header */
+
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      height: 85px;
+      background: rgb(2 2 2 / 7%);
+      padding: 0 30px;
+      z-index: 2;
+  }
+
+  header .lia {
+      position: relative;
+      display: flex;
+      top: 5px;
+  }
+
+  header .lia a {
+      width: 300px;
+  }
+
+  header .lia a img {
+      width: 25%;
+      object-fit: cover;
+  }
+
+  header nav .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      flex-direction: column;
+      position: fixed;
+      left: 50%;
+      width: 100%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #0000008f;
+      height: 100%;
+
+  }
+
+  /* Created By Sefoo333  */
+
+  header nav .links.on {
+      display: none;
+  }
+
+  header nav .links li {
+      list-style: none;
+      font-size: 20px;
+      padding: 10px;
+      transition: 0.5s;
+
+  }
+
+
+  header nav svg {
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+      position: relative;
+      z-index: 999;
+  }
+
+  header nav .links li a {
+      color: white;
+      text-decoration: none;
+      white-space: nowrap;
+      position: relative;
+      transition: 0.5s;
+  }
+
+  header nav .links li a:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 2px;
+      display: none;
+      background-color: white;
+      bottom: -6px;
+      left: 50%;
+      transform: translate(-50%);
+      transform-origin: left left;
+      transition: 0.5s;
+  }
+
+  header nav .links li a:hover:before {
+      display: block;
+      width: 85px;
+  }
+
+  /* Created By Sefoo333  */
+
+
+  /* end header */
+
+
+  /* start land */
+
+  /* Created By Sefoo333  */
+
+  .land {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      position: relative;
+      flex-direction: column;
+      width: 100%;
+      background-color: blue;
+      height: 100vh;
+      z-index: 1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(images/pexels-caio-56759.jpg);
+
+  }
+
+  .land:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -2;
+      background-color: rgb(0 0 0 / 60%);
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+  }
+
+  /* Created By Sefoo333  */
+
+
+  .land video {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -9;
+  }
+
+  .land .logo {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 13px;
+      left: 0px;
+      animation: swape 2s infinite ease;
+  }
+
+  @keyframes swape {
+      0% {
+          top: 13px;
+      }
+
+      50% {
+          top: 0;
+      }
+
+      /* Created By Sefoo333  */
+
+      100% {
+          top: 13px;
+      }
+  }
+
+  .land .logo img {
+      width: 10%;
+  }
+
+  .land .text h1 {
+      color: var(--color-2);
+      text-align: center;
+      font-size: 40px;
+      font-weight: 500;
+      font-family: 'Rubik', sans-serif;
+  }
+
+  .land .text p {
+      color: var(--color-2);
+      font-size: 20px;
+
+  }
+
+  .land .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      white-space: nowrap;
+  }
+
+  @media (max-width:767px) {
+      .land .logo img {
+          width: 30%;
+      }
+  }
+
+
+  .land .lins {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      white-space: nowrap;
+  }
+
+  .land .lins a {
+      text-decoration: none;
+      color: black;
+      margin-left: 10px;
+      padding: 10px 15px;
+      background-color: white;
+      border-radius: 9px;
+      transition: 0.5s;
+  }
+
+  .land .lins a:first-child:hover {
+      background-color: #646ad8;
+      color: black;
+  }
+
+  /* Created By Sefoo333  */
+
+  .land .lins a:last-child:hover {
+      background-color: #fdab1b;
+      color: black;
+  }
+
+  .land .swap {
+      color: black;
+      border-radius: 50%;
+      background-color: white;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0;
+  }
+
+  /* end land */
+  /* Created By Sefoo333  */
+
+  /* المعرض */
+  /* Created By Sefoo333  */
+
+  @media (max-width:767px) {
+      .elma3rd {
+          padding: 100px 15px !important;
+      }
+  }
+
+  .title {
+      text-align: center;
+      color: #646ad8;
+      position: relative;
+  }
+
+  .title h1 {
+      position: relative;
+  }
+
+  .title h1::before {
+      content: "";
+      position: absolute;
+      left: 47.5%;
+      top: -3px;
+      width: 60px;
+      height: 5px;
+      background-color: #fdab1b;
+  }
+
+  .elma3rd .la {
+      padding: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+      color: black;
+      background-color: #fdab1b;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 30px;
+  }
+
+  /* Created By Sefoo333  */
+  /* Created By Sefoo333  */
+  /* Created By Sefoo333  */
+
+
+
+  .wrapper {
+      display: flex;
+      max-width: 1200px;
+      position: relative;
+      margin-top: 30px;
+  }
+
+  .wrapper svg {
+      top: 50%;
+      height: 44px;
+      width: 44px;
+      color: #343F4F;
+      cursor: pointer;
+      font-size: 1.15rem;
+      position: absolute;
+      text-align: center;
+      line-height: 44px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+  }
+
+  .wrapper svg:active {
+      transform: translateY(-50%) scale(0.9);
+  }
+
+  .wrapper .carousel a img {
+      border: 1px solid white;
+      margin-left: 5px;
+  }
+
+  .wrapper svg:hover {
+      background: #f2f2f2;
+  }
+
+  .wrapper svg:first-child {
+      left: -22px;
+      display: none;
+  }
+
+  .wrapper svg:last-child {
+      right: -22px;
+  }
+
+  .wrapper .carousel {
+      font-size: 0px;
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+  }
+
+  .carousel.dragging {
+      cursor: grab;
+      scroll-behavior: auto;
+  }
+
+  .carousel.dragging img {
+      pointer-events: none;
+  }
+
+  .carousel img {
+      height: 340px;
+      object-fit: cover;
+      user-select: none;
+      margin-left: 14px;
+      width: calc(100% / 3);
+      margin-left: 5px;
+  }
+
+
+  .carousel img:first-child {
+      margin-left: 0px;
+  }
+
+  @media screen and (max-width: 900px) {
+      .carousel img {
+          width: calc(100% / 2);
+      }
+  }
+
+  @media screen and (max-width: 550px) {
+      .carousel img {
+          width: 100%;
+      }
+  }
+
+  /* Created By Sefoo333  */
+
+
+  /* من نحن */
+
+  .about .sec-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+  }
+
+  .about .sec-1 .main {
+      flex-basis: 50%;
+      text-align: right;
+      color: white;
+      margin-right: 20px;
+      font-size: 25px;
+  }
+
+  .about .sec-1 .ime {
+      flex-basis: 50%;
+      position: relative;
+  }
+
+  .about .sec-1 .ime img::before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: -9px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid white;
+  }
+
+  .about .sec-1 .main .desc .ele {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 15px;
+      margin-top: 10px;
+  }
+
+  .about .sec-1 .main .desc .ele svg {
+      margin-left: 15px;
+  }
+
+  .about .sec-1 .main .desc li {
+      list-style: none;
+  }
+
+  /* Created By Sefoo333  */
+
+  .about .sec-1 .ime img {
+      animation: u-d 3s infinite ease-out;
+      border: 5px solid transparent;
+      border-top: 5px solid var(--color-2);
+      border-bottom: 5px solid var(--color-1);
+      border-right: 5px solid var(--color-2);
+      border-left: 5px solid var(--color-1);
+      transform-origin: top top;
+      border-radius: 50%;
+      /*   animation: rotate 2s infinite linear;*/
+  }
+
+  @keyframes u-d {
+      0% {
+          bottom: 0px;
+          background-color: var(--color-1);
+      }
+
+      50% {
+          bottom: 30px;
+          background-color: var(--color-2);
+      }
+
+      100% {
+          bottom: 0px;
+          background-color: var(--color-1);
+      }
+  }
+
+  /*
+  @keyframes rotate {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }*/
+  /* Created By Sefoo333  */
+
+
+  @media (max-width:767px) {
+      .about .sec-1 {
+          flex-direction: column-reverse;
+          align-items: center;
+          position: relative;
+          text-align: center;
+          margin-top: 50px;
+          margin-bottom: 50px;
+      }
+
+      .about .sec-1 .main {
+          display: flex;
+          flex-direction: column;
+          white-space: nowrap;
+          text-align: center;
+      }
+  }
+
+  .twasl a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--color-2);
+      padding: 10px;
+      width: 250px;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+  }
+
+  .twasl a svg {
+      margin-left: 10px;
+  }
+
+  /* Created By Sefoo333  */
+
+  /* footer */
+
+  /* Created By Sefoo333  */
+
+  .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 80px;
+      padding: 25px;
+      white-space: nowrap;
+      background-color: lightskyblue;
+      background-image: url(images/pexels-suzy-hazelwood-1629236.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+  }
+
+  .footer .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgb(0 0 0 / 60%);
+      width: 100%;
+      height: 100%;
+  }
+
+  .footer h1 {
+      color: var(--color-1);
+  }
+
+  /* Created By Sefoo333  */
+
+
+  .footer h1 span {
+      color: var(--color-2);
+  }
+
+  .footer p {
+      color: white;
+  }
+
+  .footer a {
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+      transition: 0.5s;
+  }
+
+  .footer a:hover {
+      color: var(--color-2);
+  }
+
+  /* Created By Sefoo333  */
+
+  /* omalana */
+
+  .omlana .eless {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 85px;
+      position: relative;
+  }
+
+  .omlana .eless {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* Created By Sefoo333  */
+
+  .omlana .eless .elo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      background: white;
+      margin-left: 115px;
+      position: relative;
+      padding: 0px 40px 60px;
+      width: 330px;
+      transition: 0.5s;
+      height: 300px;
+  }
+
+  .omlana .eless .elo:before {
+      content: "";
+      position: absolute;
+      height: 207px;
+      top: -4px;
+      background-color: var(--color-1);
+      width: 345px;
+      z-index: -2;
+  }
+
+  /* Created By Sefoo333  */
+
+
+  .omlana .eless .elo::after {
+      content: "";
+      position: absolute;
+      height: 141px;
+      bottom: -4px;
+      background-color: var(--color-2);
+      width: 345px;
+      z-index: -2;
+  }
+
+  .omlana .eless .elo .imeg img {
+      width: 100px;
+      border-radius: 50%;
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 100px;
+      border: 5px solid white;
+  }
+
+  /* Created By Sefoo333  */
+
+
+  .omlana .eless .elo .imeg h2 {
+      margin-top: 37px;
+  }
+
+  .omlana .eless .elo .imeg .stars {
+      color: var(--color-1);
+  }
+
+
+  /* Created By Sefoo333  */
+
+
+  @media (max-width:767px) {
+      .omlana .eless {
+          margin-top: 50px;
+          flex-direction: column;
+      }
+
+      .omlana .eless .elo {
+          margin-left: 0;
+          margin-top: 80px;
+          height: 255px;
+      }
+  }
+
+  /* Created By Sefoo333  */
+  /* Created By Sefoo333  */
+  /* Created By Sefoo333  */
+  /* Created By Sefoo333  */
+  /* Created By Sefoo333  */
